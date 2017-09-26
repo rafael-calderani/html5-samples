@@ -12,8 +12,8 @@
 	if(typeof(EventSource) !== "undefined")
 	{
 		// Chamada do Server Side Event
-		var servidor = new EventSource("http://localhost/html5/exemplo5.php");
-		
+		var servidor = new EventSource("http://localhost/html5/html5_sse_server.php");
+
 		// Utilizando o evento onMessage - tratamento do que será feito
 		// sempre que um "data" chegar.
 		servidor.onmessage = function(event)

@@ -11,7 +11,7 @@
 <script type="text/javascript">
 if(typeof window.Worker === "function")
 {
-  var worker = new Worker("exemplo8.js");
+  var worker = new Worker("html5_worker_server.js");
   // Evento onmessage para tratar a mensagem enviada pelo worker
   worker.onmessage = function (event)
   {
